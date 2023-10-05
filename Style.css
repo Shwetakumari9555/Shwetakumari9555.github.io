@@ -166,7 +166,7 @@ section .title::after{
 
 
 /* home section styling */
-.home{
+.homes{
     display: flex;
     background: url("./images/back_image.avif") no-repeat center;
     height: 100vh;
@@ -176,30 +176,30 @@ section .title::after{
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
 }
-.home .max-width{
+.homes .max-width{
   width: 100%;
   display: flex;
 }
-.home .max-width .row{
+.homes .max-width .row{
   margin-right: 0;
 }
-.home .home-content .text-1{
+.homes .home-content .text-1{
     font-size: 27px;
 }
-.home .home-content .text-2{
+.homes .home-content .text-2{
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
 }
-.home .home-content .text-3{
+.homes .home-content .text-3{
     font-size: 40px;
     margin: 5px 0;
 }
-.home .home-content .text-3 span{
+.homes .home-content .text-3 span{
     color: crimson;
     font-weight: 500;
 }
-.home .home-content a{
+.homes .home-content a{
     display: inline-block;
     background: crimson;
     color: #fff;
@@ -211,7 +211,7 @@ section .title::after{
     border: 2px solid crimson;
     transition: all 0.3s ease;
 }
-.home .home-content a:hover{
+.homes .home-content a:hover{
     color: crimson;
     background: none;
 }
@@ -822,6 +822,12 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
+}
+
+.tech{
+    text-decoration: none;
+    background: none;
+    background-color: transparent;
 }
 
 
