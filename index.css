@@ -1,0 +1,725 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  /* for aligning everything in middle */
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  /* Navbar styles */
+  #nav-menu {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  #nav-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  #nav-menu li {
+    padding: 10px;
+  }
+  
+  #nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  #nav-menu li a:hover {
+    color: cornflowerblue;
+  }
+  
+  /* Home section styles */
+  #home {
+    text-align: center;
+    padding: 70px 0;
+    background-color: #f9f9f9;
+  }
+  
+  
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .home-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  #user-detail-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  #user-detail-intro {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  /* About section styles */
+  
+  .about-content {
+    text-align: center;
+  }
+  
+  
+  
+  .about-description {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  
+  
+  /* Projects section styles */
+  /* Projects section styles */
+  #projects {
+    padding: 50px 0;
+    background-color: #fff;
+  }
+  
+  .project-carousel {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .project-card-container {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .project-card {
+    flex: 0 0 300px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-right: 20px;
+  }
+  
+  .project-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .project-control-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project-control-btn:hover {
+    background-color: #555;
+  }
+  
+  /* Contact section styles */
+  #contact {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f9f9f9;
+  }
+  
+  
+  .contact-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .contact-list li {
+    margin-right: 20px;
+  }
+  
+  .contact-list li:last-child {
+    margin-right: 0;
+  }
+  
+  .contact-list li a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-list li a:hover {
+    color: #666;
+  }
+  
+  /* Resume section styles */
+  #resume {
+    padding: 50px 0;
+    background-color: #fff;
+  }
+  
+  
+  .resume-buttons {
+    text-align: center;
+  }
+  
+  .resume-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .resume-button:hover {
+    background-color: #555;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .skills-card-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .skills-card {
+      width: 100%;
+    }
+  
+    .project-card-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .project-card-container {
+      flex-wrap: wrap;
+    }
+  
+    .project-card {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .section-title {
+      font-size: 28px;
+    }
+  
+    .about-description {
+      font-size: 16px;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  .box22 {
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+    background-color: #001C55;
+    border: 1px solid #989292;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-radius: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 2rem;
+    backdrop-filter: blur(5px);
+  }
+  
+  .skills-card {
+    border: none;
+    border-top: 3px solid rgb(126, 133, 126);
+    border-radius: 8px;
+    font-size: 1em;
+    color: #001C55;
+    font-weight: bold;
+    background: white;
+    display: flex;
+  
+    flex: 0 1 16%;
+    height: 60px;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin: 1%;
+    padding: 5px;
+    transform-origin: 50% 5em;
+  }
+  
+  .box22>div>div>img {
+    max-width: 40px;
+    margin-right: 5px;
+  }
+  
+  .skills-card {
+    animation: wiggle 3s linear infinite;
+    animation-delay: calc(0.3s * var(--i));
+  }
+  
+  @keyframes wiggle {
+  
+    0%,
+    7% {
+      transform: rotateZ(0);
+    }
+  
+    15% {
+      transform: rotateZ(-10deg);
+    }
+  
+    20% {
+      transform: rotateZ(5deg);
+    }
+  
+    25% {
+      transform: rotateZ(-5deg);
+    }
+  
+    30% {
+      transform: rotateZ(3deg);
+    }
+  
+    35% {
+      transform: rotateZ(-2deg);
+    }
+  
+    40%,
+    100% {
+      transform: rotateZ(0);
+    }
+  }
+  
+  
+  /* gitHub streak stats  */
+  
+  .github {
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    margin: auto;
+    text-align: center;
+    gap: 10px;
+    padding-top: 10px;
+  }
+  
+  .github>div:nth-child(3) {
+    grid-column: 1 / 3;
+    grid-row: 2;
+    text-align: center;
+  }
+  
+
+
+/* Navigation bar styles */
+#nav-menu {
+  background-color: #333;
+  padding: 15px 0;
+}
+
+#nav-menu ul {
+  list-style: none;
+  text-align: center;
+}
+
+#nav-menu li {
+  display: inline;
+  margin: 0 15px;
+}
+
+#nav-menu a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 0px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#nav-menu a:hover {
+  background-color: #ff5733;
+  color: #fff;
+}
+
+  
+  /* Reset some default styles for better consistency */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the Home section */
+/* #home {
+  background-image: linear-gradient(135deg, #36454F, #dce1e3);
+  /* Gradient background */
+  /* text-align: center;
+  padding: 100px 0;
+} */ */
+
+/* .profile {
+  margin: 0 auto; /* Center the content horizontally */
+  max-width: 300px;
+} */
+
+/* .home-img {
+  max-width: 100%;
+  border-radius: 50%; /* Make the image round */
+  border: 6px solid #fff; /* Add a white border around the image */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add a shadow to the image */
+} */
+
+#user-detail-name {
+  font-size: 36px;
+  margin-top: 15px;
+  color: #fff; /* White text color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
+}
+
+/* Style the About section */
+#about {
+  background-color: #f9f9f9; /* Light gray background color */
+  text-align: center;
+  padding: 100px 0;
+}
+
+.section-title {
+  font-size: 42px;
+  margin-bottom: 30px;
+  color: #333; /* Dark text color */
+  padding-left: 20px ;
+}
+
+.about-description {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  color: #555; /* Slightly darker text color */
+}
+
+/* Style the "Download Resume" button */
+.resume-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #3498db; /* Blue background color */
+  color: #fff; /* White text color */
+  text-decoration: none;
+  border-radius: 30px; /* Rounded button */
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.resume-button:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+  transform: scale(1.05); /* Scale up slightly on hover */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .profile {
+    max-width: 200px;
+  }
+
+  #user-detail-name {
+    font-size: 28px;
+  }
+
+  .section-title {
+    font-size: 36px;
+  }
+}
+
+
+/* Projects Section */
+#projects {
+  background-color: #f5f5f5;
+  padding: 60px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+/* Project Carousel */
+.project-carousel {
+  overflow: hidden;
+  position: relative;
+}
+
+.project-card-container {
+  display: flex;
+  overflow-x: auto;
+  padding: 10px;
+  scroll-behavior: smooth;
+}
+
+.project-card {
+  flex: 0 0 calc(33.33% - 20px);
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin: 0 10px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.project-title {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #333;
+}
+
+.project-description {
+  font-size: 16px;
+  color: #777;
+  margin-top: 10px;
+}
+
+.project-tech-stack {
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Improved Button Styles */
+.project-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 16px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.project-button.github {
+  background-color: #333;
+}
+
+.project-button.deployed {
+  background-color: #007BFF;
+}
+
+.project-button:hover {
+  background-color: #555;
+}
+
+/* Project Controls */
+.project-controls {
+  margin-top: 30px;
+}
+
+.project-control-btn {
+  font-size: 24px;
+  color: #333;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+}
+
+.prev-btn::before {
+  content: '\2190';
+}
+
+.next-btn::before {
+  content: '\2192';
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .project-card {
+      flex: 0 0 calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .project-card {
+      flex: 0 0 100%;
+  }
+}
+.project-controls .project-control-btn {
+  background-color: #27ae60;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 0;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.project-controls .project-control-btn:hover {
+  background-color: #219d54;
+  transform: translateY(-2px);
+}
+/* Contact Section Styles */
+#contact {
+  background-color: #f8f8f8;
+  padding: 80px 0;
+  text-align: center;
+}
+
+#contact .section-title {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#contact .contact-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#contact .contact-list li {
+  margin: 1rem;
+  text-align: center;
+}
+
+#contact .contact-list a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #007BFF;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 5px;
+}
+
+#contact .contact-list a:hover {
+  color: #0056b3;
+  border-color: #0056b3;
+}
+
+.contact-icon {
+  font-size: .2rem;
+  margin-right: 0.5rem;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  #contact .container {
+      padding: 40px 0;
+  }
+
+  #contact .section-title {
+      font-size: 2rem;
+  }
+
+  #contact .contact-list a {
+      font-size: 1.2rem;
+  }
+}
+
+
+
+
+
+.home-img {
+  max-width: 100%;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+#user-detail-name {
+  font-size: 36px;
+  margin-top: 15px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
+}
+
+p {
+  font-size: 18px;
+  color: #ccc; /* Text color for the description */
+}
+
+/* Set the background image for the section */
+
+#home {
+  background-image: url('images/code6.jpg'); /* Replace with your background image path */
+  background-size:cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#home::before {
+  content: "";
+  background-image: url('images/code6.jpg'); /* Same background image as above */
+  filter: blur(10px); /* Adjust the blur amount as needed */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  padding: 20px; /* Adjust padding as needed */
+  color: white; /* Set text color for better visibility */
+}

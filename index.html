@@ -1,327 +1,293 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
-    
-    <script src="https://kit.fontawesome.com/13760dee3d.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="index.css">
+    <title>Portfolio</title>
 </head>
+
 <body>
-    <div class="scroll-up-btn">
-        <i class="fas fa-angle-up"></i>
-    </div>
-    <nav class="navbar" id="nav-menu">
-        <div class="max-width">
-            <div class="logo"><a href="index.html">Sw<span>eta</span></a></div>
-            <ul class="menu">
-                <li><a href="#home" class="menu-btn nav-link home">Home</a></li>
-                <li><a href="#about" class="menu-btn nav-link about">About</a></li>
-                <li><a href="#services" class="menu-btn nav-link project">Projects</a></li>
-                <li><a href="#skills" class="menu-btn nav-link skills">Skills</a></li>
-               
-                <li><a target="_blank" id="resume-button-1"  download="" onclick="resume()" href="Sweta-Resume.pdf" class="menu-btn">Resume</a></li>
-                <li><a href="#contact" class="menu-btn nav-link contact">Contact</a></li>
-            </ul>
-            <div class="menu-btn">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </nav>
+   <!-- Navbar -->
+   <nav id="nav-menu">
+    <ul>
+        <li><a href="#home" class="nav-link home">Home</a></li>
+        <li><a href="#about" class="nav-link about">About</a></li>
+        <li><a href="#skills" class="nav-link skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link projects">Projects</a></li>
+        <li><a href="#contact" class="nav-link contact">Contact</a></li>
+        <li>
+            <a class="nav-link resume"
+                href="https://drive.google.com/file/d/1xHurBAIPNYXKUSrepB38mbKzYLjL27tT/view?usp=download"
+                onclick="resume()"
+                target="_blank"
+                download=""
+                id="resume-button-1">Resume</a>
+        </li>
+    </ul>
+</nav>
 
-    <!-- home section start -->
-    <section class="homes" id="home">
-        <div class="max-width">
-            <div class="home-content">
-                <div class="text-1">Hello, my name is</div>
-                <div class="text-2 " id="user-detail-name">Sweta Kumari</div>
-                <div class="text-3">And I'm a <span class="typing"></span></div>
-                <a href="#contact">Hire me</a>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container">
+            <div class="profile">
+                <img src="images/Profile.jfif" alt="Professional Photo" class="home-img">
+                <h1 id="user-detail-name">Sweta Kumari</h1>
+               <p>Java Backend Developer</p> 
             </div>
         </div>
     </section>
+    
+    
+    
+    
+    
+    
+    
 
-    <!-- about section start -->
-    <section class="about section" id="about">
-        <div class="max-width">
-            <h2 class="title">About me</h2>
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
             <div class="about-content">
-                <div class="column left">
-                    <img class="home-img" style="width: 300px;" src="./images/119477006.jfif" alt="" >
-                </div>
-                <div class="column right">
-                    <div class="text" id="user-detail-intro" >I'm Sweta Kumari and I'm a <span class="typing-2"></span></div>
-                    <p id="user-detail-intro">I have a strong background in software development, with a primary focus
-                         on back-end technologies.I honed my skills in developing
-                         robust and scalable applications. With a deep understanding of Java, the Spring framework, 
-                        MySQL, <a class="tech" href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a> CSS, and <a class="tech" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a> I successfully delivered high-quality solutions. I take pride in my ability to 
-                        solve complex problems, optimize performance, and contribute to the success of projects through strong coding 
-                        practices and a commitment to continuous learning.
-                        </p>
-                    <a id="resume-button-2" href="Sweta-Resume.pdf" onclick="resume()"  target="_blank">Download Resume</a>
-                </div>
+                <h2 class="section-title">About</h2>
+                <p class="about-description" id="user-detail-intro">Experienced Java backend developer adept at crafting full-stack projects. Proficient in HTML, CSS, JavaScript, Java, Spring Boot, Hibernate, and RESTful APIs. Strong problem-solving skills, attention to detail, proactive team player, and effective communicator. Committed to delivering high-quality software solutions within deadlines.</p>
+            </div>
+
+            <div class="resume-buttons">
+                <a class="resume-button" id="resume-button-2"
+                    href="https://drive.google.com/file/d/1xHurBAIPNYXKUSrepB38mbKzYLjL27tT/view?usp=download">Download
+                    Resume</a>
             </div>
         </div>
     </section>
 
-    <!-- project section start -->
-    <section class="services" id="services">
-        <div class="max-width" id="projects">
-            <h2 class="title">My Projects</h2>
-            <div class="serv-content">
-                <div class="card project-card">
-                    <div class="box">
-                        <img class="home-img" style="width: 50%;" src="./images/TinyToes.png" alt="belk clone">
-                        <div class="text project-title">This is a project realated to Clonning Of First Cry.com </div>
-                        <p class="project-description">Tiny Toes is an ecommerce website that specializes in children's clothing, shoes, and accessories. </p>
-                       <a class="project-deployed-link" href="https://drive.google.com/file/d/1EDHPVpM-txfXQa3zIuqIBLS7d77ZiK2c/view?usp=share_link" target="_blank"><i class="fa-solid fa-eye"></i></a>
-                        <a class="project-github-link" href="https://github.com/viveKing21/tiny-toes-ecom" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    </div>
+    <!-- SkillSection -->
+    <section id="skills">
+        <div class="box22">
+            <div class="skills-card" style="--i:1;">
+                <div>
+                    <img class="skills-card-img" src="/images/java2.png" alt="">
                 </div>
-
-
-                <div class="card project-card">
-                    <div class="box">
-                        <img class="home-img" style="width: 50%;" src="./images/Tourism.png" alt="belk clone">
-                        <div class="text project-title">Toursim Website</div>
-                        <p class="project-description">This website showcases essential features for tourism enthusiasts, including comprehensive CRUD operations and robust user validation at each step.</p>
-                       <a class="project-deployed-link" href="https://drive.google.com/file/d/1l286wO_czhRo7WVZpmEfRor39209eZMt/view?usp=sharing" target="_blank"><i class="fa-solid fa-eye"></i></a>
-                        <a class="project-github-link" href="https://github.com/Shwetakumari9555/caring-pig-745" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    </div>
+                <div class="skills-card-name">
+                    JAVA
                 </div>
-                <div class="card project-card">
-                    <div class="box">
-                        <img class="home-img" style="width: 100%;" src="images/Screenshot (3).png" alt="belk clone">
-                        <div class="text project-title">Online Customer Service Managment System</div>
-                        <p class="project-description">Service Hub is a cutting-edge call center management system designed to revolutionize call center operations.</p>
-                        <a class="project-deployed-link" href="https://lively-sundae-72cddc.netlify.app/" target="_blank"><i class="fa-solid fa-eye"></i></a>
-                        <a class="project-github-link" href="https://github.com/Shwetakumari9555/vogue-pocket-8479" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    </div>
-                </div>
-                <div class="card project-card">
-                    <div class="box">
-                        <img class="home-img" style="width: 90%;" src="./images/NearBuy.png" alt="belk clone">
-                        <div class="text project-title">User-friendly Nearby Website.</div>
-                        <p class="project-description">Explore this Nearby Website, featuring essential CRUD operations and robust user validation at every step, tailored for your convenience. </p>
-                        <a class="project-deployed-link" href="https://illustrious-maamoul-51bef1.netlify.app/" target="_blank"><i class="fa-solid fa-eye"></i></a>
-                        <a class="project-github-link" href="https://github.com/sagarbhadrawle/enormous-library-3081" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        
-                    </div>
-                </div>
-          
-           
-               </div>
             </div>
-        </div>
-    </section>
 
-    <!-- skills section start -->
-    <section class="skills" id="skills">
-        <div class="max-width">
-            <h2 class="title">My skills</h2>
-            <div class="skills-content">
-                <div class="column left">
-                    <div class="text">My creative skills & experiences.</div>
-                    <p>A forward-thinking and detail-oriented individual aspiring to become a 
-                        proficient full-stack developer. Specializing in a wide range of technologies, including Java, 
-                        Spring Boot, SQL, REST APIs, Git/GitHub, AWS, HTML, CSS, Bootstrap, JavaScript, and object-oriented design.
-                         Driven by self-motivation and a hunger for learning, I have a deep passion for creating user-centric products. 
-                        I am eagerly seeking opportunities to further enhance my skills in a challenging work environment.</p>
-                    <a href="#">Read more</a>
+            <div class="skills-card" style="--i:2;">
+                <div>
+                    <img class="skills-card-img" src="images/spring3.png" alt="">
                 </div>
-                <div class="column right">
-                    <div class="bars">
-                        <div class="info skills-card">
-                            <img class="skills-card-img" src="/images/skills/icons8-java-96.svg" alt="Java">
-                            <span class="skills-card-name">Core Java</span>
-                        </div>
-                        
-                    </div>
-                    <div class="bars">
-                        <div class="info skills-card">
-                            <img class="skills-card-img" src="/images/skills/springio-icon.svg" alt="Springboot">
-                            <span class="skills-card-name">Spring Boot</span>
-                        </div>
-                       
-                    </div>
-                    <div class="bars">
-                        <div class="info skills-card">
-                            <img class="skills-card-img" src="/images/skills/hibernate-ar21.svg" alt="hibernate">
-                            <span class="skills-card-name">Hibernate</span>
-                        </div>
-                       
-                    </div>
-                    <div class="bars">
-                        <div class="info skills-card">
-                            <img class="skills-card-img" style= "width: 90px;" src="./images/skills/rest-api.svg" alt="rest-api">
-                            <span class="skills-card-name">REST APIs</span>
-                        </div>
-                        
-                    </div>
-                    <div class="bars">
-                        <div class="info skills-card">
-                           <img class="skills-card-img" src="./images/skills/icons8-html-5-96.svg" alt="html logo">
-                           <span class="skills-card-name">HTML 5</span>
-                        </div>
-                       
-                    </div>
-                    <div class="bars">
-                        <div class="info skills-card">
-                            <img class="skills-card-img" src="./images/skills/icons8-css3-96.svg" alt="css logo">
-                            <span class="skills-card-name">CSS 3</span>
-                        </div>
-                       
-                    </div>
-                    <div class="bars">
-                        <div class="info skills-card">
-                           <img class="skills-card-img" src="./images/skills/icons8-javascript-96.svg" alt="JavaScript logo">
-                           <span class="skills-card-name">JavaScript</span>
-                        </div>
-                        
-                    </div>
-                    <div class="bars">
-                        <div class="info skills-card">
-                            <img class="skills-card-img" src="./images/skills/icons8-mysql-logo-96.svg" alt="mysql logo">
-                            <span class="skills-card-name">MySQL</span>
-                        </div>
-                        
-                    </div>
+                <div class="skills-card-name">
+                    Spring Boot
+                </div>
+            </div>
+
+            <div class="skills-card" style="--i:3;">
+                <div>
+                    <img class="skills-card-img" src="/images/mysql2.png"
+                        alt="">
+                </div>
+                <div class="skills-card-name">
+                    MySQL
+                </div>
+            </div>
+
+            <div class="skills-card" style="--i:4;">
+                <div>
+                    <img class="skills-card-img" src="images/hibernate.png" alt="">
+                </div>
+                <div class="skills-card-name">
+                    Hibernate
+                </div>
+            </div>
+
+            <div class="skills-card" style="--i:5;">
+                <div>
+                    <img class="skills-card-img" src="/images/git.png" alt="">
+                </div>
+                <div class="skills-card-name">
+                    Git
+                </div>
+            </div>
+
+            <div class="skills-card" style="--i:6;">
+                <div>
+                    <img class="skills-card-img" src="images/html.png" alt="">
+                </div>
+                <div class="skills-card-name">
+                    HTML
+                </div>
+
+            </div>
+
+            <div class="skills-card" style="--i:7;">
+                <div>
+                    <img class="skills-card-img" src="images/css.png" alt="">
+                </div>
+                <div class="skills-card-name">
+                    CSS
+                </div>
+            </div>
+
+            <div class="skills-card" style="--i:8;">
+                <div>
+                    <img class="skills-card-img" src="/images/javascript-39393.png" alt="">
+                </div>
+                <div class="skills-card-name">
+                    JavaScript
+                </div>
+            </div>
+
+            <div  class="skills-card" style="--i:9;">
+                <div>
+                    <img class="skills-card-img" src="/images/restAPI.png" alt="">
+                </div>
+                <div class="skills-card-name">
+                    restAPI
+                </div>
+            </div>
+
+            <div  class="skills-card" style="--i:10;">
+                <div>
+                    <img class="skills-card-img" src="/images/maven.png" alt="">
+                </div>
+                <div class="skills-card-name">
+                    Maven
                 </div>
             </div>
         </div>
+
     </section>
 
-    <!-- academic details -->
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="project-carousel">
+                <div class="project-card-container">
+                    <div class="project-card">
+                        <!-- Project 1 content -->
+                        <img src="#" alt="">
+                        <h2 class="project-title">xyz</h2>
+                        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
+                            nam!</p>
+                        <p class="project-tech-stack">JAVA</p>
+                        <a href="#" class="project-github-link">Github</a>
+                        <a href="#" class="project-deployed-link">Netlify</a>
+                    </div>
 
-    <section class="services" id="education">
-        <div class="max-width">
-            <h2 class="title">Academic Details</h2>
-            <div class="serv-content">
-                <div class="card">
-                    <div class="box">
-                        <i class="fa-solid fa-code"></i>
-                        <div class="text">Java Full-Stack Development</div>
-                        <p>Masai School</p>
-                        <p>Nov-2022 - present</p>
-                      
+                    <div class="project-card">
+                        <!-- Project 2 content -->
+                        <img src="#" alt="">
+                        <h2 class="project-title">xyz</h2>
+                        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
+                            nam!</p>
+                        <p class="project-tech-stack">JAVA</p>
+                        <a href="#" class="project-github-link">Github</a>
+                        <a href="#" class="project-deployed-link">Netlify</a>
+                    </div>
+
+                    <div class="project-card">
+                        <!-- Project 3 content -->
+                        <img src="#" alt="">
+                        <h2 class="project-title">xyz</h2>
+                        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
+                            nam!</p>
+                        <p class="project-tech-stack">JAVA</p>
+                        <a href="#" class="project-github-link">Github</a>
+                        <a href="#" class="project-deployed-link">Netlify</a>
+                    </div>
+
+                    <div class="project-card">
+                        <!-- Project 4 content -->
+                        <img src="#" alt="">
+                        <h2 class="project-title">xyz</h2>
+                        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
+                            nam!</p>
+                        <p class="project-tech-stack">JAVA</p>
+                        <a href="#" class="project-github-link">Github</a>
+                        <a href="#" class="project-deployed-link">Netlify</a>
+                    </div>
+
+                    <div class="project-card">
+                        <!-- Project 5 content -->
+                        <img src="#" alt="">
+                        <h2 class="project-title">xyz</h2>
+                        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
+                            nam!</p>
+                        <p class="project-tech-stack">JAVA</p>
+                        <a href="#" class="project-github-link">Github</a>
+                        <a href="#" class="project-deployed-link">Netlify</a>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="box">
-                        <i class="fa-solid fa-graduation-cap"></i>
-                        <div class="text">Bachelors in Commerce</div>
-                        <p>Devi Ahilya University</p>
-                        <p>2019 - 2021</p>
-                        
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <i class="fa-solid fa-school"></i>
-                        <div class="text">Higher Secondary Education</div>
-                        <p>Haryana board, Haryana</p>
-                        <p>2016 - 2018</p>
-                    </div>
-                </div>
-               </div>
             </div>
-        </div>
-    </section>
-    <!-- github secttion start -->
-    <section class="react-activity-calendar services">
-        <div class="max-width">
-            <h2 class="title">GitHub</h2>
-            <!-- <div class="card">
-                <div class="box" id="box1">
-                    <img style="width: 100%;" id="github-streak-stats" src="./images/githubcontriubution.jpg" alt="">
-                </div> -->
-            </div>
-            <div class="serv-content">
+            <div class="project-controls">
                 
-                <div class="card">
-                    <div class="box">
-                        <img style="width: 100%;" id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com/?user=ShwetaKumari9555&exclude_days=Sun%2CSat" alt="">
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img style="width: 100%;" id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ShwetaKumari9555" alt="">
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img style="width: 100%;" id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=ShwetaKumari9555" alt="">
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- contact section start -->
-    <section class="contact" id="contact">
-        <div class="max-width">
-            <h2 class="title">Contact me</h2>
-            <div class="contact-content">
-                <div class="column left">
-                    <div class="text">Reach Out to Me</div>
-                    <p>If you find my work and skills intriguing, please don't hesitate to get in touch. I'm enthusiastic about the prospect of 
-    connecting and collaborating with you.</p>
-                    <div class="icons">
-                        <div class="socialrow">
-                            <a id="contact-linkedin" href="https://www.linkedin.com/in/sweta-kumari-5718661aa/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                            <a id="contact-github" href="https://github.com/ShwetaKumari9555" target="_blank"><i class="fa-brands fa-github"></i></a>
-                           
+    <!-- gitHub streak stats -->
+   <!-- GitHub Profile Stats Section -->
+   <section id="github-profile">
+    <div class="container">
+        <div class="section-wrapper">
+            <h2 class="section-title">GitHub Profile</h2>
+        </div>
+    </div>
+    <div class="github">
+        <!-- GitHub Streak Stats -->
+        <div>
+            <a class="react-activity-calendar" href="https://git.io/streak-stats" target="_blank">
+                <img id="github-streak-stats"
+                    src="https://github-readme-streak-stats.herokuapp.com/?user=ShwetaKumari9555&exclude_days=Sun%2CSat"
+                    alt="GitHub Streak Stats" />
+            </a>
+        </div>
+        
+        <!-- GitHub Stats Card -->
+        <div>
+            <a class="react-activity-calendar" href="https://github.com/Wasim901/github-readme-stats" target="_blank">
+                <img id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=ShwetaKumari9555"
+                    alt="GitHub Stats Card" />
+            </a>
+        </div>
+        
+        <!-- GitHub Top Languages -->
+        <div>
+            <a class="react-activity-calendar" href="https://github.om/Wasim901/github-readme-stats" target="_blank">
+                <img id="github-top-langs"
+                    src="https://github-readme-stats.vercel.app/api/top-langs/?username=ShwetaKumari9555"
+                    alt="GitHub Top Languages" />
+            </a>
+        </div>
+    </div>
+</section>
 
-                        </div>
-                        <div class="row">
-                            <i class="fas fa-user"></i>
-                            <div class="info">
-                                <div class="head">Name</div>
-                                <div class="sub-title">Sweta Kumari</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div class="info">
-                                <div class="head">Address</div>
-                                <div class="sub-title">Faridabad, Haryana</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                           <a href="mailto:sagarbhadrawle@gmail.com"><i class="fas fa-envelope"></i></a>
-                            <div class="info">
-                                <div class="head">Email</div>
-                                <div class="sub-title" id="contact-email">Shwetakumari9555@gmail.com</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                           <i class="fas fa-phone"></i>
-                            <div class="info">
-                                <div class="head">Phone No:</div>
-                                <div class="sub-title" id="contact-phone">9555370881</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-              
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-heading">
+                <h2 class="section-title">Contact</h2>
             </div>
+            <ul class="contact-list">
+                <li><a href="https://github.com/Shwetakumari9555" id="contact-github">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/sweta-kumari-5718661aa/" id="contact-linkedin">LinkedIn</a>
+                </li>
+                <li><a href="#" id="contact-phone">Phone: +91 9555370881</a></li>
+                <li><a href="mailto:Shwetakumari8448@gmail.com" id="contact-email">Email</a></li>
+            </ul>
         </div>
     </section>
 
-    <!-- footer section start -->
-    <footer>
-        <span>Created By <a href="index.html">Sweta</a> | <span class="far fa-copyright"></span> 2023 All rights reserved.</span>
-    </footer>
 
-    <script src="script.js"></script>
+
+
+    <!-- JavaScript -->
+    <script src="index.js"></script>
 </body>
+
 </html>
