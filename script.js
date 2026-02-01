@@ -73,5 +73,5 @@ $(document).ready(function(){
 });
 
 function resume() {
-    window.open("https://drive.google.com/file/d/1vuDkxAqvHrSgCsCN2JyWXxQzfcOyrtrS/view?usp=sharing");
+    window.open("https://drive.google.com/file/d/19qTmB0ytsc_SwQ5fDTfpfvjc7uFb-0Yl/view?usp=sharing");
 }
